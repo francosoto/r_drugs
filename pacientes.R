@@ -22,7 +22,6 @@ for(row in 1:nrow(pacientes)) {
     #print(fechas[row])
     #print(drogas[row])
     if (c(drogas[row]) %in% daux) {
-      print("pasó")
       result$paciente[i] <- pacientes_nombre[row]
       result$fechas[i] <- fechas[row]
       result$drogas[i] <- drogas[row]
